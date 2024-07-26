@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <img src="./img/VikLogo.png" alt="Logo" class="header__logo">
+    </header>
+    <main class="principal">
+        <section class="ingresos">
+            <div class="ingresos__texto">   
+                <textarea class="ingresos__texto__input" id="textoInput" oninput="validarCampo();" rows="11"  placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+            <div class="ingresos__alerta" id="ingresosAlerta">
+                <p> <span> <img class="ingresos__alerta__icono" src="./img/icono.png" alt=""> </span> Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="ingresos__opciones">
+                <button class="ingresos__opciones__boton__E" onclick="encriptarTexto();">Encriptar</button>
+                <button class="ingresos__opciones__boton__D" onclick="desencriptarTexto();">Desencriptar</button>
+            </div>
+        </section>
+        <section class="resultados">
+            <img src="./img/image.png" alt="imagen" class="resultados__imagen"  id="Vacio0">
+            <p class="resultados__vacio__1" id="Vacio1"> <strong> Ningún mensaje fue encontrado  </strong> </p>
+            <p class="resultados__vacio__2" id="Vacio2">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <p  id="textoResultado"></p>
+
+            <button class="copiar__boton hidden"  id="BotonCopiar" onclick="copiarTexto();">Copiar</button>
+            
+        </section>
+    </main>
+    <footer>
+        <p class="Footer_Victor">DESARROLLADO POR V1KT0R</p>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
